@@ -1,0 +1,268 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1em;
+    margin: 20px 0 0 5px;
+}
+
+main {
+    padding: 0 1rem;
+    margin: 2rem 1rem;
+}
+
+.categoria {
+    margin-bottom: 40px;
+}
+
+.categoria h2 {
+    font-size: 2em;
+    color: #001f3f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.item {
+    height: 34rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.item-foto {
+    margin-top: auto;
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    align-items: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.item-title {
+    margin-top: auto;
+    text-align: center;
+}
+
+.item-info {
+    margin-top: auto;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.item-nome {
+    margin-top: auto;
+    font-size: 1.5em;
+    margin: 10px 0;
+    align-self: left;
+}
+
+.item-codigo, .item-autor, .item-edicao, .item-editora, .item-oferta, .item-quantidade {
+    margin: 5px 0;
+}
+
+.contribuir-btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 1px;
+    align-self: center;
+    width: 50%;
+    background-color: #0d8226;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: auto;
+}
+
+.contribuir-btn:hover {
+    background-color: #004080;
+}
+
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.2rem;
+padding: 0;
+      margin: 0;
+
+}
+
+footer a {
+    color: white;
+}
+
+.pix-message {
+    position: relative; 
+	margin: 0;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+
+
+}
+
+.pix-message p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.seta {
+    background-color: black;
+    color: black;
+    font-size: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header-content {
+        max-width: 700px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-content {
+        max-width: 600px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        margin: 2rem 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .item {
+        height: auto;
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        max-width: 500px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        margin: 1.5rem 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .item {
+        padding: 10px 5px;
+    }
+
+    .item-nome {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    main {
+        margin: 1rem 0.5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 5px;
+    }
+
+    .item {
+        padding: 5px;
+    }
+
+    .contribuir-btn {
+        width: 70%;
+        font-size: medium;
+    }
+
+    footer {
+        font-size: 1em;                
+
+    }
+  .pix-message {
+    width: 100w;
+    text-align: center;
+}
+
+}
+
+
